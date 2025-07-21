@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+  <div>
+     <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">LOGO</div>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#" class="nav-link">Company</a></li>
+          <li><a href="#" class="nav-link">Services</a></li>
+          <li><a href="#" class="nav-link">FinTech Solutions</a></li>
+          <li><a href="#" class="nav-link">Products</a></li>
+          <li><a href="#" class="nav-link">Portfolio</a></li>
+          <li><a href="#" class="nav-link active">Contact us</a></li>
+        </ul>
+        <div class="mobile-menu-toggle">
+          <img src="menu.png" width="20" height="20" alt="menu" class="option-click" id="menuToggle" />
+        </div>
+      </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </header>
+
+    <section class="Sec">
+      <h1 class="h">Contact us</h1>
+      <p class="p1">Need an experienced and skilled hand with custom IT projects? <br> Fill out the form to get a free
+        consultation.</p>
+    </section>
+
+    <div class="all">
+      <div class="form">
+
+        <form class="flex-container1">
+          <input type="text" placeholder="Your Company Name" required>
+          <input type="text" placeholder="Nature of Bussiness" required>
+
+          <div class="flex-container2">
+            <input type="text" class="address" placeholder="Adress" required>
+            <input type="text" class="Postcode" placeholder="Postcode" required>
+          </div>
+
+          <input type="text" placeholder="Contact name" required>
+          <input type="text" placeholder="Contact Phone" required>
+          <section>
+            <input type="email" class="email" placeholder="email@gmail" required>
+            <p> <small style="color: red;">Please , enter valid email address </small></p>
+          </section>
+
+          <input type="text" placeholder="Linkedin" required>
+          <input type="text" placeholder="Let's talk about your idea" required>
+
+          <section class="file">
+            <span class="upload-icon">&#8682;</span>
+            <span class="upload-text">Upload Additional file</span>
+            <input class="uploadfile" type="file" id="myfile" name="myfile"><br><br>
+
+          </section>
+
+          <p class="UP"> <small> Attach file. File size of your documents should not exceed 10MB</small></p>
+
+          <input class="submit" type="submit" value="SUBMIT">
+          <section class="box">
+            <input type="checkbox" id="checkbox1" name="checkbox1" value="protect">
+            <label for="checkbox1">I want to protect my data by signing an NDA </label><br>
+          </section>
+
+        </form>
+
+      </div>
+
+      <div class="office">
+        <h3>Offices</h3>
+
+        <p style="margin-top: 24px">
+          United States<br />
+          500 5th Avenue Suite 400, NY 10110
+        </p>
+
+        <p style="margin-top: 24px">
+          United Kingdom<br />
+          High St, Bromley BR1 1DN
+        </p>
+
+        <p style="margin-top: 24px">
+          France<br />
+          80 avenue des Terroirs de France, Paris
+        </p>
+
+          <h3 style="margin-top: 5rem">For Quick Inquiries</h3>
+
+      <div class="justify" style="margin-top: 24px">
+        <img src="vector.png" width="20" height="15" alt="uk" />
+        <p>+44 7777777777</p>
+      </div>
+      <div class="justify" style="margin-top: 24px">
+        <img src="vector1.png" width="20" height="15" alt="us" />
+        <p>+1 3333333330</p>
+      </div>
+       <h3 style="margin-top: 5rem">Would you like to join our newsletter?</h3>
+      <div class="justify" style="margin-top: 24px">
+        <input class="input-control" type="email" id="newsletter-email" placeholder="Email" />
+        <button class="submit-btn2" type="submit">
+          <i class="fa-solid fa-check"></i>
+        </button>
+      </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const navMenu = document.getElementById("navMenu");
+
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+</script>
+
+
+
+
+</body>
+
+</html>
